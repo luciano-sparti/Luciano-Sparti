@@ -22,6 +22,10 @@ I work at the intersection of automation, security, and reliability — building
 
 A running log of what I build — from shipped tools to things still on the loom.
 
+> **The Terminal DevOps & SecOps Suite**  
+> A cohesive ecosystem of focused CLI & TUI utilities designed around classical and mythological motifs:  
+> *Manage processes ([FATES](https://github.com/Luciano-Sparti/FATES)) → Navigate files ([Cardea](https://github.com/Luciano-Sparti/cardea)) → Inspect traffic ([Panopticon](https://github.com/Luciano-Sparti/panopticon)) → Seal secrets ([Hecate](https://github.com/Luciano-Sparti/hecate-vault)).*
+
 ### 👁️ Panopticon — Terminal Real-Time Network Traffic Analyzer & Lightweight NIDS
 [![CI](https://github.com/Luciano-Sparti/panopticon/actions/workflows/ci.yml/badge.svg)](https://github.com/Luciano-Sparti/panopticon/actions/workflows/ci.yml)
 [![Python: 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
@@ -67,9 +71,9 @@ A running log of what I build — from shipped tools to things still on the loom
 
 
 ### 🔜 Upcoming
+- *🗝️ Hecate Vault (`hecate`)* — a local-first, TPM-backed hardware-sealed secrets vault CLI in Rust (Kleidouchos / Key-Bearer), providing zero-leak subshell secret injection, envelope encryption, and tamper-evident audit logging.
 - *🗳️ Blockchain Voting System* — a tamper-evident voting platform built on blockchain, exploring verifiable, transparent elections without sacrificing voter anonymity.
 - *🛡️ Compliance-as-Code Scanner* — a scanner that turns policy requirements into executable checks, so compliance becomes a CI gate instead of a yearly fire drill.
-- *🔒 Encrypted Secrets Vault CLI* — a local-first, TPM-backed encrypted secrets vault for developers and DevOps workflows, storing secrets encrypted on disk with shell/env injection, rotation, and audit logging.
 - *🚨 Incident Runbook Automator* — a CLI that ingests alerts, gathers related configs/logs, and drafts a timestamped incident brief with timeline, blast radius, and suggested next steps to cut MTTR.
 
 ### 🎓 Academic
