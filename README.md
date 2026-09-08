@@ -22,6 +22,31 @@ I work at the intersection of automation, security, and reliability — building
 
 A running log of what I build — from shipped tools to things still on the loom.
 
+### 👁️ Panopticon — Terminal Real-Time Network Traffic Analyzer & Lightweight NIDS
+[![CI](https://github.com/Luciano-Sparti/panopticon/actions/workflows/ci.yml/badge.svg)](https://github.com/Luciano-Sparti/panopticon/actions/workflows/ci.yml)
+[![Python: 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Built with Rich](https://img.shields.io/badge/TUI-Rich-magenta.svg)](https://rich.readthedocs.io/)
+**Python · Scapy · Rich TUI · CyberSecurity / NIDS · Open Source**
+
+> *All traffic observed. Anomalies highlighted. Threats contained.* Real-time terminal packet inspection, sliding-window threat heuristics, deep host forensics, and streaming PCAP export.
+
+Panopticon gives system administrators and security engineers an immediate, zero-overhead vantage point over network traffic directly from the terminal without the overhead of desktop GUIs:
+
+```bash
+# Install with isolated dependencies & launcher
+curl -sSL https://raw.githubusercontent.com/luciano-sparti/panopticon/main/install.sh | bash
+
+# Sniff interface with live dashboard & NIDS heuristics
+sudo panopticon -i eth0 --resolve-hosts
+```
+
+- 📊 **Interactive 4-Pane TUI** — Live packet stream, ranked top-talkers with EWMA bandwidth velocity, active security alerts, and full-screen panel zoom (`1`–`4`).
+- 🛡️ **Heuristic NIDS Engine** — Catches TCP SYN-scans, stealth probes (FIN/NULL/Xmas), beaconing C2 heartbeats, cleartext credential exposure, and bandwidth abuse.
+- 🔍 **Deep Host Inspector** — Drill into any talker (`Enter`) to inspect open sessions, contacted ports, TLS SNI / DHCP hostnames, and process attribution (`/proc`).
+- 🗄️ **Multi-Format Streaming Exporters** — Streams capture into wire-fidelity PCAP, per-packet flow CSV, and SIEM-ready alert JSONL simultaneously off-thread.
+
+🔗 **[github.com/Luciano-Sparti/panopticon](https://github.com/Luciano-Sparti/panopticon)** · ⭐ star it if you monitor network traffic from the terminal
+
 ### 🪟 Cardea — Desktop-Ergonomic Terminal File Manager
 [![CI](https://github.com/Luciano-Sparti/cardea/actions/workflows/ci.yml/badge.svg)](https://github.com/Luciano-Sparti/cardea/actions/workflows/ci.yml)
 [![crates.io](https://img.shields.io/crates/v/cardea)](https://crates.io/crates/cardea)
@@ -82,7 +107,7 @@ frontend    RUNNING    84489    0.0%     140.2 MB   2m 47s
 ---
 
 ## 🔐 Current Focus
-- Maintaining **Cardea** & **FATES**, and shipping Rust utilities for system & file operations
+- Maintaining **Panopticon**, **Cardea** & **FATES**, and building security & DevSecOps tooling
 - Building **Encrypted Secrets Vault CLI** and **Incident Runbook Automator**
 - Automating **secure CI/CD pipelines** with policy enforcement
 - Practicing **Infrastructure as Code (IaC)** and studying cloud security & OSINT
