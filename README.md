@@ -69,9 +69,22 @@ A running log of what I build — from shipped tools to things still on the loom
 
 🔗 **[github.com/Luciano-Sparti/FATES](https://github.com/Luciano-Sparti/FATES)**
 
+### 🗝️ Hecate Vault — Enterprise Software HSM & Guard Point Security Suite
+[![CI](https://github.com/Luciano-Sparti/hecate-vault/actions/workflows/ci.yml/badge.svg)](https://github.com/Luciano-Sparti/hecate-vault/actions/workflows/ci.yml)
+[![crates.io](https://img.shields.io/crates/v/hecate-core)](https://crates.io/crates/hecate-core)
+**Rust · Software HSM · gRPC / mTLS · Ratatui TUI · Cryptography · Open Source**
+
+> *Keys protected. Policies signed. Secrets sealed.* High-assurance enterprise Software HSM, asymmetric policy governance, transparent Guard Point file encryption, and cryptographic audit ledger.
+
+- 🔐 **Software HSM & Shamir Key Custody** — AES-256-GCM Key Encryption Keys (KEKs), memory zeroization (`mlock` + `zeroize`), and multi-party Shamir 3-of-5 threshold disaster recovery quorum.
+- 📁 **Transparent Guard Points & Root Containment** — File envelope encryption, granular UID & binary SHA-256 validation, and unauthorized `root` access containment (`--deny-root`).
+- 🛡️ **mTLS Agent Node Governance** — gRPC daemon with Internal CA (X.509 issuance), OTET single-use tokens, Ed25519 digitally signed policy envelopes, and instant certificate revocation.
+- 📊 **Executive TUI & Audit Proofs** — Full Ratatui terminal dashboard, live compliance posture tracking, SHA-256 tamper-evident hash-chain audit ledger, and Argon2id DR backups.
+
+🔗 **[github.com/Luciano-Sparti/hecate-vault](https://github.com/Luciano-Sparti/hecate-vault)**
+
 
 ### 🔜 Upcoming
-- *🗝️ Hecate Vault (`hecate`)* — a local-first, TPM-backed hardware-sealed secrets vault CLI in Rust (Kleidouchos / Key-Bearer), providing zero-leak subshell secret injection, envelope encryption, and tamper-evident audit logging.
 - *🗳️ Blockchain Voting System* — a tamper-evident voting platform built on blockchain, exploring verifiable, transparent elections without sacrificing voter anonymity.
 - *🛡️ Compliance-as-Code Scanner* — a scanner that turns policy requirements into executable checks, so compliance becomes a CI gate instead of a yearly fire drill.
 - *🚨 Incident Runbook Automator* — a CLI that ingests alerts, gathers related configs/logs, and drafts a timestamped incident brief with timeline, blast radius, and suggested next steps to cut MTTR.
@@ -83,8 +96,8 @@ A running log of what I build — from shipped tools to things still on the loom
 ---
 
 ## 🔐 Current Focus
-- Maintaining **Panopticon**, **Cardea** & **FATES**, and building security & DevSecOps tooling
-- Building **Encrypted Secrets Vault CLI** and **Incident Runbook Automator**
+- Maintaining **Panopticon**, **Cardea**, **FATES** & **Hecate Vault**, and building security & DevSecOps tooling
+- Building **Incident Runbook Automator** and **Compliance-as-Code Scanner**
 - Automating **secure CI/CD pipelines** with policy enforcement
 - Practicing **Infrastructure as Code (IaC)** and studying cloud security & OSINT
 
